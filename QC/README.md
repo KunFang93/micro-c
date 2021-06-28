@@ -21,20 +21,19 @@ conda create -n dt-microc python=3.7
 conda activate dt-microc
 conda install bwa deeptools samtools pairtools preseq pandas tabulate
 ```
-3. run dt_microc_align_v3.sh file
+3. run dt_microc_align_v3.sh file on the sample data
 ```
-wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisSet/hg19.p13.plusMT.no_alt_analysis_set.fa.gz
+wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisSet/hg19.p13.plusMT.no_alt_analysis_set.fa.gz --no-check-certificate
 bwa index hg19.p13.plusMT.no_alt_analysis_set.fa.gz
-sh dt_microc_align_v3.sh Sample_R1.fastq.gz Sample_R2.fastq.gz Sample_name reference.fa micro-c/QC/hg19.chrom.sizes.txt
+wget https://s3.amazonaws.com/dovetail.pub/HiC/fastqs/MicroC_2M_R1.fastq --no-check-certificate
+wget https://s3.amazonaws.com/dovetail.pub/HiC/fastqs/MicroC_2M_R2.fastq --no-check-certificate
+sh dt_microc_align_v3.sh MicroC_2M_R1.fastq MicroC_2M_R2.fastq MicroC-test hg19.p13.plusMT.no_alt_analysis_set.fa.gz micro-c/QC/hg19.chrom.sizes.txt
 ```
 
-FYI the reason for choosing this version of fasta file could be found in https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
-and __hg19.chrom.sizes.txt__ should be found in the folder.  
-
-For practice purpose, the __Sample_R1.fastq.gz__ and __Sample_R2.fastq.gz__ can be found in https://micro-c.readthedocs.io/en/latest/data_sets.html  
+FYI the reason for choosing this version of fasta file could be found in https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use  
 
 4. run get_qc.py file in the Micro-C folder to get the summarized QC results
 ```
-python Path to micro-c/QC/get_qc.py Sample.txt > Sample.stats.txt
+python micro-c/QC/get_qc.py MicroC-test.txt > MicroC-test.stats.txt
 ```
-5. Visualize the summarized results in Sample.stats.txt
+5. Visualize the summarized results in MicroC-test.stats.txt
