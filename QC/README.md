@@ -2,14 +2,15 @@
 Tested on the shallow sequencing data.
 
 ## Pre-requirement
-make sure conda/miniconda is installed in the linux system
+Make sure conda/miniconda is installed in the linux system
 
 ## Quick start
-1. download files in the folder
+1. Download respiratories
 ```
-git clone
+git clone https://github.com/dovetail-genomics/Micro-C.git
+git clone https://github.com/KunFang93/micro-c.git
 ```
-2. create a conda environment: dt-microc with dt_microc.yml file 
+2. Create a conda environment: dt-microc with dt_microc.yml file 
 ```
 conda create -n dt-microc -f dt_microc.yml
 ```
@@ -19,6 +20,9 @@ conda activate dt-microc
 ```
 4. run dt_microc_align_v2.sh file
 ```
-sh dt_microc_align_v2.sh /data/kun/3_LC/micro-C/raw_data/shallow_seq/JIN_V_06182021/T47D_A3_S14_R1_001.fastq.gz /data/kun/3_LC/micro-C/raw_data/shallow_seq/JIN_V_06182021/T47D_A3_S14_R2_001.fastq.gz T47D_A3_S14
+sh dt_microc_align_v2.sh Sample_R1.fastq.gz Sample_R2.fastq.gz Sample_name
 ```
-5. run get_qc.py file to get the summarized QC results
+5. run get_qc.py file in the Micro-C folder to get the summarized QC results
+```
+python Path to Micro-C/get_qc.py Sample.txt
+```
