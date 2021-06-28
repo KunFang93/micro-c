@@ -26,7 +26,7 @@ reference.fa could be downloaded from https://hgdownload.soe.ucsc.edu/goldenPath
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisSet/hg19.p13.plusMT.no_alt_analysis_set.fa.gz
 ```
 FYI the reason for choosing this version of fasta file could be found in https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
-and hg19.chrom.sizes.txt should be found in the folder.
+and hg19.chrom.sizes.txt should be found in the folder.  
 5. run get_qc.py file in the Micro-C folder to get the summarized QC results
 ```
 python Path to Micro-C/get_qc.py Sample.txt > Sample.stats.txt
