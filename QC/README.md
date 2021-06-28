@@ -15,16 +15,13 @@ bash Miniconda3-latest-Linux-x86_64.sh
 ```
 git clone https://github.com/KunFang93/micro-c.git
 ```
-2. Create a conda environment: dt-microc with __dt_microc.yml__ file 
+2. Create and activate a conda environment: dt-microc with __dt_microc.yml__ file 
 ```
 conda create -n dt-microc python=3.7
+conda activate dt-microc
 conda install bwa deeptools samtools pairtools preseq pandas tabulate
 ```
-3. activate dt-microc environment
-```
-conda activate dt-microc
-```
-4. run dt_microc_align_v3.sh file
+3. run dt_microc_align_v3.sh file
 ```
 sh dt_microc_align_v3.sh Sample_R1.fastq.gz Sample_R2.fastq.gz Sample_name reference.fa micro-c/QC/hg19.chrom.sizes.txt
 ```
@@ -41,8 +38,8 @@ and __hg19.chrom.sizes.txt__ should be found in the folder.
 
 For practice purpose, the __Sample_R1.fastq.gz__ and __Sample_R2.fastq.gz__ can be found in https://micro-c.readthedocs.io/en/latest/data_sets.html  
 
-5. run get_qc.py file in the Micro-C folder to get the summarized QC results
+4. run get_qc.py file in the Micro-C folder to get the summarized QC results
 ```
 python Path to micro-c/QC/get_qc.py Sample.txt > Sample.stats.txt
 ```
-6. Visualize the summarized results in Sample.stats.txt
+5. Visualize the summarized results in Sample.stats.txt
