@@ -4,6 +4,11 @@ Tested on the shallow sequencing data. Potentially applied for both hg19/hg38 bu
 ## Pre-requirement
 Make sure conda/miniconda is installed in the linux system.  
 The instruction of installing miniconda can be found in https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation
+In the server, run the following command
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
 
 ## Quick start
 1. Download respiratory
