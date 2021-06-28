@@ -5,9 +5,8 @@ Tested on the shallow sequencing data.
 Make sure conda/miniconda is installed in the linux system
 
 ## Quick start
-1. Download respiratories
+1. Download respiratory
 ```
-git clone https://github.com/dovetail-genomics/Micro-C.git
 git clone https://github.com/KunFang93/micro-c.git
 ```
 2. Create a conda environment: dt-microc with dt_microc.yml file 
