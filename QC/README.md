@@ -2,7 +2,8 @@
 Tested on the shallow sequencing data. Potentially applied for both hg19/hg38 but only hg19 sizes file provided. 
 
 ## Pre-requirement
-Make sure conda/miniconda is installed in the linux system
+Make sure conda/miniconda is installed in the linux system.  
+The instruction of installing miniconda can be found in https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation
 
 ## Quick start
 1. Download respiratory
