@@ -17,7 +17,8 @@ git clone https://github.com/KunFang93/micro-c.git
 ```
 2. Create a conda environment: dt-microc with __dt_microc.yml__ file 
 ```
-conda create -n dt-microc -f micro-c/QC/dt_microc.yml
+conda create -n dt-microc python=3.7
+conda install bwa deeptools samtools pairtools preseq pandas tabulate
 ```
 3. activate dt-microc environment
 ```
