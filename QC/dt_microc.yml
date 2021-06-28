@@ -5,11 +5,6 @@ channels:
   - defaults
 dependencies:
   - tabulate
-  - numpy
-  - scipy
-  - py2bit
-  - matplotlib
-  - pyBigWig
   - deeptools
   - pandas
   - bwa
