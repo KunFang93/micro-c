@@ -21,12 +21,12 @@ conda activate dt-microc
 ```
 sh dt_microc_align_v3.sh Sample_R1.fastq.gz Sample_R2.fastq.gz Sample_name reference.fa hg19.chrom.sizes.txt
 ```
-reference.fa could be downloaded from https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisSet/ with following command
+__reference.fa__ could be downloaded from https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisSet/ with following command
 ```
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisSet/hg19.p13.plusMT.no_alt_analysis_set.fa.gz
 ```
 FYI the reason for choosing this version of fasta file could be found in https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
-and hg19.chrom.sizes.txt should be found in the folder.  
+and __hg19.chrom.sizes.txt__ should be found in the folder.  
 5. run get_qc.py file in the Micro-C folder to get the summarized QC results
 ```
 python Path to Micro-C/get_qc.py Sample.txt > Sample.stats.txt
