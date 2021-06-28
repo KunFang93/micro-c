@@ -23,14 +23,9 @@ conda install bwa deeptools samtools pairtools preseq pandas tabulate
 ```
 3. run dt_microc_align_v3.sh file
 ```
-sh dt_microc_align_v3.sh Sample_R1.fastq.gz Sample_R2.fastq.gz Sample_name reference.fa micro-c/QC/hg19.chrom.sizes.txt
-```
-
-__reference.fa__ could be downloaded from https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisSet/ with following command
-
-```
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/analysisSet/hg19.p13.plusMT.no_alt_analysis_set.fa.gz
 bwa index hg19.p13.plusMT.no_alt_analysis_set.fa.gz
+sh dt_microc_align_v3.sh Sample_R1.fastq.gz Sample_R2.fastq.gz Sample_name reference.fa micro-c/QC/hg19.chrom.sizes.txt
 ```
 
 FYI the reason for choosing this version of fasta file could be found in https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use
