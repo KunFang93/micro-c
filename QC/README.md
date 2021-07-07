@@ -34,6 +34,6 @@ FYI the reason for choosing this version of fasta file could be found in https:/
 
 4. run get_qc.py file in the Micro-C folder to get the summarized QC results
 ```
-python micro-c/QC/get_qc.py MicroC-test.txt > MicroC-test.stats.txt
+python micro-c/QC/get_qc.py -p MicroC-test.txt > MicroC-test.stats.txt
 ```
 5. Visualize the summarized results in MicroC-test.stats.txt
